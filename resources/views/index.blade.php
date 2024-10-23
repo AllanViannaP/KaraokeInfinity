@@ -41,8 +41,7 @@
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"</div>
-                        <img src="assets/img/tnw-logo.svg" alt="..." style="height: 3rem" />
+                        <div class="h2 fs-1 text-white mb-4">"sample!"</div>
                     </div>
                 </div>
             </div>
@@ -56,36 +55,35 @@
                             <div class="col-md-6 mb-5">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <i class="bi-phone icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Device Mockups</h3>
-                                    <p class="text-muted mb-0">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
+                                    <i class="bi-youtube icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Play from youtube</h3>
+                                    <p class="text-muted mb-0">sample</p>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-5">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <i class="bi-camera icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Flexible Use</h3>
-                                    <p class="text-muted mb-0">Put an image, video, animation, or anything else in the screen!</p>
+                                    <i class="bi-mic-fill icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Sing</h3>
+                                    <p class="text-muted mb-0">sample!</p>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-6 mb-5 mb-md-0">
+                        <div class="col-md-6">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <i class="bi-gift icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Free to Use</h3>
-                                    <p class="text-muted mb-0">As always, this theme is free to download and use for any purpose!</p>
+                                    <i class="bi-github icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">More projects</h3>
+                                    <p class="text-muted mb-0">Inserir Link</p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <!-- Feature item-->
                                 <div class="text-center">
-                                    <i class="bi-patch-check icon-feature text-gradient d-block mb-3"></i>
-                                    <h3 class="font-alt">Open Source</h3>
-                                    <p class="text-muted mb-0">Since this theme is MIT licensed, you can use it commercially!</p>
-                                </div>
+                                <i class="bi bi-file-earmark-fill icon-feature text-gradient d-block mb-3"></i>
+                                    <h3 class="font-alt">Documentation</h3>
+                                    <p class="text-muted mb-0">Inserir Link</p>
                             </div>
                         </div>
                     </div>
