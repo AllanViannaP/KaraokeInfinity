@@ -5365,6 +5365,14 @@ textarea.form-control-lg {
   padding: var(--bs-modal-padding);
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  background-color: #000;
+}
+
 .modal-footer {
   display: flex;
   flex-shrink: 0;
