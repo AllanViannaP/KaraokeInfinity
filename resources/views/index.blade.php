@@ -41,7 +41,7 @@
             <div class="container px-5">
                 <div class="row gx-5 justify-content-center">
                     <div class="col-xl-8">
-                        <div class="h2 fs-1 text-white mb-4">"sample!"</div>
+                        <div class="h3 text-white mb-4">With Karaoke Infinit, you can sing your favorite songs, explore new styles, and enjoy unforgettable musical moments. There's no limit to your creativity!</div>
                     </div>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                                 <div class="text-center">
                                     <i class="bi-youtube icon-feature text-gradient d-block mb-3"></i>
                                     <h3 class="font-alt">Play from youtube</h3>
-                                    <p class="text-muted mb-0">sample</p>
+                                    <p class="text-muted mb-0">Easily access a vast library of songs directly from YouTube. Search for your favorite tracks and sing along with the original music videos!</p>
                                 </div>
                             </div>
                             <div class="col-md-6 mb-5">
@@ -65,7 +65,7 @@
                                 <div class="text-center">
                                     <i class="bi-mic-fill icon-feature text-gradient d-block mb-3"></i>
                                     <h3 class="font-alt">Sing</h3>
-                                    <p class="text-muted mb-0">sample!</p>
+                                    <p class="text-muted mb-0">Show off your vocal skills! Express yourself through music, choose from a wide range of songs and sing at your own pace.</p>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +75,7 @@
                                 <div class="text-center">
                                     <i class="bi-github icon-feature text-gradient d-block mb-3"></i>
                                     <h3 class="font-alt">More projects</h3>
-                                    <p class="text-muted mb-0">Inserir Link</p>
+                                    <a class="text-gradient mb-0" href="https://github.com/AllanViannaP" target="blank">https://github.com/AllanViannaP</a>
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -83,7 +83,7 @@
                                 <div class="text-center">
                                 <i class="bi bi-file-earmark-fill icon-feature text-gradient d-block mb-3"></i>
                                     <h3 class="font-alt">Documentation</h3>
-                                    <p class="text-muted mb-0">Inserir Link</p>
+                                    <a class="text-gradient mb-0" href="https://github.com/AllanViannaP/KaraokeInfinity/wiki" target="blank">https://github.com/AllanViannaP/KaraokeInfinity/wiki</a>
                             </div>
                         </div>
                     </div>
