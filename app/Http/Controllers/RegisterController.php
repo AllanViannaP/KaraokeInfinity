@@ -46,7 +46,8 @@ class RegisterController extends Controller
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
             ]);
-            return view('auth.verify');
+             $_SESSION['created']['mensagem']   = "Account created, please log in";
+               return redirect()->route('login');
         }
     }
 

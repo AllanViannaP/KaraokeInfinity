@@ -30,6 +30,10 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         @auth
+                        <i class="bi bi-mic-fill mt-2"></i>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#feedbackModal">Sing</a>
+                        </li>
                         <i class="bi bi-person-fill mt-2"></i>
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="modal" data-bs-target="#feedbackModal">My account</a>

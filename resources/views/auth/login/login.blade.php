@@ -21,6 +21,10 @@
                                 echo '<div class="alert alert-danger" style="margin-top : 20px;" role="alert">' . $_SESSION['login_invalido']['mensagem'] . '</div>';
                                 unset($_SESSION['login_invalido']);
                             }
+                            else if(isset($_SESSION['created'])){
+                                 echo '<div class="alert alert-success" style="margin-top : 20px;" role="alert">' . $_SESSION['created']['mensagem'] . '</div>';
+                                unset($_SESSION['created']);
+                            }
                             ?>
                         </div>
                         <div class="card">
