@@ -57,7 +57,7 @@
     <footer class=" footer bg-black text-center py-5">
         <div class="container px-5">
             <div class="text-white-50 small">
-                <div class="mb-2">CHANGE</div>
+                <div class="mb-2">Made by Allan Vianna</div>
             </div>
         </div>
     </footer>
