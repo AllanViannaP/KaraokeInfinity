@@ -1,7 +1,7 @@
 @extends('template.master')
 
 @section('title')
-    <title>My games</title>
+    <title>Settings</title>
 @endsection
 
 @section('content')
