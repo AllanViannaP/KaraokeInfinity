@@ -2,7 +2,7 @@
 
 
 @section('content')
-
+<title>Log In</title>
 <!-- Login -->
 <section class="inner-page">
     <div class="container">
@@ -13,7 +13,7 @@
 
                         <div class="text-center mt-4">
                             <h1 class="h2 section-title" data-aos="fade-up">
-                                Please <b>login</b> to continue
+                                Please <b>log in</b> to continue
                             </h1>
                             <?php
                             session_start();
@@ -23,7 +23,6 @@
                             }
                             ?>
                         </div>
-
                         <div class="card">
                             <div class="card-body">
                                 <div class="m-sm-4">
@@ -43,9 +42,14 @@
                                             </small>
                                         </div>
                                         <div class="mt-3">
-                                            <button type="submit" class="btn btn-lg btn-primary">Login</button>
+                                            <button type="submit" class="btn btn-lg btn-primary rounded-pill">Login</button>
                                         </div>
                                     </form>
+                                    <br>
+                                    <div class="mt-3">
+                                        <span>Don't have an account?<a class="nav-link" href="{{route('register')}}" style="color:blue">Sign In</a> 
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
