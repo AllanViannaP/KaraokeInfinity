@@ -15,19 +15,22 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 
+//Index routes
 Route::get('/', ['uses' => 'HomeController@index',  'as' => 'index']);
 Route::get('/home', ['uses' => 'HomeController@index',  'as' => 'index']);
+
+//--User Routes--
 Route::get('/login', ['uses' => 'Auth\LoginController@login',  'as' => 'login']);
+Route::get('/sing', ['uses' => 'UserController@sing',  'as' => 'sing']);
 Route::get('/settings', ['uses' => 'UserController@settings',  'as' => 'settings']);
+
+//Login routes
+
 Route::post('/login/verify', ['uses' => 'Auth\LoginController@verify_login',  'as' => 'login.verify']);
 Route::get('/register', ['uses' => 'RegisterController@register', 'as' => 'register']);
 Route::post('/registrate', ['uses' => 'RegisterController@registrate', 'as' => 'registrate']);
-Route::get('/user', ['uses' => 'UserController@index',  'as' => 'index']);
-
 Route::get('/logout', function () {
     Auth::logout();
     return redirect()->route('index');
 })->name('logout');
-
-
 Route::post('/verification.resend', ['uses' => 'Auth\RegisterController@verification.resend', 'as' => 'verification.resend']);

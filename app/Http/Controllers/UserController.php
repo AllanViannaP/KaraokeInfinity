@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 class UserController extends Controller
 {
     public function settings(){
-        return view('auth.login.login');
+        return view('auth.user');
     }
 
-    public function index(){
-        return view('auth.user')
+    public function sing(){
+        return view('auth.sing');
     }
 }

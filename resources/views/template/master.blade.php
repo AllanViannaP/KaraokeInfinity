@@ -32,11 +32,11 @@
                         @auth
                         <i class="bi bi-mic-fill mt-2"></i>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#feedbackModal">Sing</a>
+                            <a class="nav-link" href="{{route('sing')}}">Sing</a>
                         </li>
                         <i class="bi bi-person-fill mt-2"></i>
                         <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#feedbackModal">My account</a>
+                            <a class="nav-link"  href="{{route('settings')}}">My account</a>
                         </li>
 
                         @else
