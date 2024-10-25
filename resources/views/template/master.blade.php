@@ -17,6 +17,8 @@
          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+         <link href="css/styles.css" rel="stylesheet" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
     </head>
 
     <body id="page-top">
