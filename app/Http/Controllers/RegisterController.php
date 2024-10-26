@@ -45,6 +45,7 @@ class RegisterController extends Controller
                 'name' => $request->name,
                 'email' => $request->email,
                 'password' => Hash::make($request->password),
+                'created_at' =>  date("Y/m/d H:i:s"),
             ]);
              $_SESSION['created']['mensagem']   = "Account created, please log in";
                return redirect()->route('login');
