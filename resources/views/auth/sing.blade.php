@@ -18,7 +18,7 @@
 
                       <div class="card audio-card text-center">
                         <h6 class="mb-2">Microphone Player</h6>
-                        <audio id="audio" src="your-audio-file.mp3" controls class="d-none"></audio> <!-- Hide the default player -->
+                        <audio id="audio" controls class="d-none"></audio> <!-- Hide the default player -->
                         <div class="button-group">
                             <button id="playPauseBtn" class="btn btn-light text-gradient mb-2">
                                 <i class="bi bi-mic-fill"></i>
