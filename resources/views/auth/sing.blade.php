@@ -14,23 +14,40 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                    <iframe width="800" height="600"  src="https://www.youtube.com/embed/IOolH4BORnM" allow="fullscreen;"></iframe>
+            <iframe width="800" height="600"  src="https://www.youtube.com/embed/IOolH4BORnM" allow="fullscreen;"></iframe>
 
-                      <div class="card audio-card text-center">
-                        <h6 class="mb-2">Microphone Player</h6>
-                        <audio id="audio" controls class="d-none"></audio> <!-- Hide the default player -->
-                        <div class="button-group">
-                            <button id="playPauseBtn" class="btn btn-light text-gradient mb-2">
-                                <i class="bi bi-mic-fill"></i>
-                            </button>
-                                <input id="volumeControl" type="range" min="0" max="100" value="0" />
+                <div class="card audio-card text-center">
+                <h6 class="mb-2">Microphone Player</h6>
+                <audio id="audio" controls class="d-none"></audio> <!-- Hide the default player -->
+                <div class="button-group">
+                    <button id="playPauseBtn" class="btn btn-light text-gradient mb-2">
+                        <i class="bi bi-mic-fill"></i>
+                    </button>
+                        <input id="volumeControl" type="range" min="0" max="100" value="0" />
+                </div>
+                <div id="card" class="mt-md-1" style="margin-top: 0px;">
+                    <div id="conteudo-card" class="col-md-12" style="padding: 0; margin-top: 0px;">
+                        <div id="data_table_body" class="card-body">
+                            <div class="m-0 p-0 table-responsive-md mt-4">
+                                <table id="users" class="table mt-3 table-striped table-bordered dataTable dt-responsive w-100">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">URL</th>
+                                            <th scope="col">Uploaded By</th>
+                                            <th scope="col">Queue</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
                         </div>
                     </div>
+                </div>
             </div>
         </div>
     </div>
 
-        <script>
+    <script>
         $(document).ready(function() {
             // Automatically start capturing audio when the page loads
             if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -93,6 +110,38 @@
                 playIcon.classList.add('bi-mic-fill'); // Add the unmuted microphone icon
             });
         });
+   </script>
+
+   <script>
+     //DATATABLE Ajax 
+        $(document).ready(function(){
+            var table = $('#users').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": {
+                    url: "{{ route('populate.dt.sing') }}"
+                }, "columns": [
+                    {
+                    data: 'name',
+                }, {
+                    data: 'URL',
+                }, {
+                    data: 'user_name',
+                },{
+                render: function(data){
+                        return '<div class=""> ' +
+                                    '<div class="row mb-1"> ' +
+                                        '<center>'+
+                                            '<div class="col-4 p-0" > ' +
+                                                '<i  onClick=addQueue() class="bi bi-plus-square-fill text-gradient px-2 py-1" title="Add Queue" style="font-size: 25px;"></i> '+
+                                            '</div> ' +
+                                        '</center>'+
+                                    '</div> ' +
+                                '</div>'
+                    } 
+            }]
+            });
+        })
    </script>
 
 </section>

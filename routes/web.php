@@ -23,9 +23,11 @@ Route::get('/home', ['uses' => 'HomeController@index',  'as' => 'index']);
 Route::get('/login', ['uses' => 'Auth\LoginController@login',  'as' => 'login']);
 Route::get('/sing', ['uses' => 'UserController@sing',  'as' => 'sing']);
 Route::get('/settings', ['uses' => 'UserController@settings',  'as' => 'settings']);
+Route::get('/populate.dt.sing', ['uses' => 'UserController@populateDtSing', 'as' => 'populate.dt.sing']);
+
+
 
 //Login routes
-
 Route::post('/login/verify', ['uses' => 'Auth\LoginController@verify_login',  'as' => 'login.verify']);
 Route::get('/register', ['uses' => 'RegisterController@register', 'as' => 'register']);
 Route::post('/registrate', ['uses' => 'RegisterController@registrate', 'as' => 'registrate']);
