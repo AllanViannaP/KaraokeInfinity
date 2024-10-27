@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Scripts\SSP;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -58,4 +59,26 @@ class UserController extends Controller
             return abort(404);
         }
     }
+
+    public function storeYoutubeLink(Request $request)
+{
+    // Valide o link do YouTube
+    $request->validate([
+        'youtube_link' => ['required', 'regex:/^(https?\:\/\/)?(www\.youtube\.com|youtu\.?be)\/.+$/']
+    ]);
+    
+
+    // Salve o link no banco de dados (modifique de acordo com sua estrutura)
+    DB::table('musics   ')
+    ->insert([
+        'name' => 'Padrao',
+        'URL' => $request->input('youtube_link'),
+        'user_id' => auth()->user()->id,
+        'created_at' =>  date("Y/m/d H:i:s"),
+    ]);
+
+    return response()->json(['success' => true, 'message' => 'Link salvo com sucesso!']);
+}
+
+
 }
